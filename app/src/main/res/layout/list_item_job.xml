@@ -1,0 +1,160 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="28dp"
+    android:background="@android:color/transparent"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:padding="10dp">
+
+        <android.widget.ImageView
+            android:id="@+id/icon_worker_profile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_vacancy" />
+
+        <ImageView
+            android:id="@+id/all_job_post_info_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/all_job_post_skills"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="129dp"
+            android:layout_marginEnd="19dp"
+            android:src="@drawable/baseline_info_24" />
+
+        <TextView
+            android:id="@+id/all_job_post_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/icon_worker_profile"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@id/icon_worker_profile"
+            android:maxLines="1"
+            android:padding="5dp"
+            android:text="Job Title"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/about_company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/all_job_post_title"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="1dp"
+            android:layout_toEndOf="@+id/icon_worker_profile"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Company name"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/all_job_post_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/all_job_post_title"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_toEndOf="@id/icon_worker_profile"
+            android:padding="5dp"
+            android:text="31 July, 2023"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/gray_300" />
+
+        <TextView
+            android:id="@+id/all_job_post_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:maxLines="3"
+            android:visibility="gone"
+            android:layout_below="@id/all_job_post_date"
+            android:layout_toStartOf="@id/all_job_post_info_icon"
+            android:layout_toEndOf="@id/icon_worker_profile" />
+
+        <TextView
+            android:id="@+id/all_job_post_skills"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Skills"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="#000000"
+            android:padding="5dp"
+            android:visibility="gone"
+            android:layout_below="@id/all_job_post_description"
+            android:layout_toStartOf="@id/all_job_post_info_icon"
+            android:layout_toEndOf="@id/icon_worker_profile" />
+
+        <TextView
+            android:id="@+id/all_job_post_salary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/all_job_post_skills"
+            android:layout_marginStart="-100dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="101dp"
+            android:layout_toStartOf="@id/all_job_post_info_icon"
+            android:layout_toEndOf="@id/icon_worker_profile"
+            android:padding="5dp"
+            android:text="Salary"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/green_200" />
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/about_company_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text=""
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/about_company_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text=""
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:paddingLeft="20dp"
+        android:visibility="gone"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/about_company_bio"
+        android:layout_width="373dp"
+        android:layout_height="254dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rectangle_border"
+        android:padding="40dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:textSize="16sp" />
+
+</androidx.cardview.widget.CardView>

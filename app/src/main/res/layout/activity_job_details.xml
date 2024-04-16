@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    android:background="@color/home_bg"
+    tools:context=".Activity.JobDetailsActivity">
+
+    <include
+        android:id="@+id/toolbar_job_details"
+        layout="@layout/toolbar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Switch
+            android:id="@+id/switch_about_company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:minHeight="48dp"
+            android:text="Switch to company"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/job_details_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/white"
+            android:text="Job Title..."
+
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+        />
+
+        <TextView
+            android:id="@+id/job_details_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="2 August,2023"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/blue_100" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/icon_company_profile"
+        android:layout_width="229dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/ic_vacancy"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/about_company_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text=""
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/about_company_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text=""
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/about_company_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="aboutcomcpna"
+        android:gravity="center"
+        android:tooltipText="about company"
+        android:layout_gravity="center"
+        android:paddingLeft="20dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/about_company_bio"
+        android:layout_width="373dp"
+        android:layout_height="254dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/rectangle_border"
+        android:padding="40dp"
+        android:text=""
+        android:visibility="gone"
+        android:textColor="@color/white"
+        android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/job_details_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:text="Description\n\nHere is a long description with multiple paragraphs. Make sure to use '\\n\\n' for paragraph breaks. This ensures that the text is well formatted and readable."
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/white"
+                android:gravity="start"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                />
+
+    <TextView
+        android:id="@+id/job_details_skills"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:gravity="center_horizontal|start"
+        android:background="@drawable/rectangle_for_input"
+        android:padding="8dp"
+        android:text="Skills"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/job_details_salary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="8dp"
+        android:text="Salary"
+        android:gravity="center_horizontal|start"
+        android:background="@drawable/rectangle_for_input"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/green_200"
+
+        />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                />
+    <TextView
+        android:id="@+id/job_details_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="8dp"
+        android:text="Email"
+
+        android:background="@drawable/rectangle_for_input"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:gravity="center_horizontal|start"
+        android:textColor="@color/white"
+        />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                />
+
+            <android.widget.Button
+                android:id="@+id/btn_reply"
+                android:layout_width="wrap_content"
+                android:layout_height="63dp"
+                android:layout_marginStart="30dp"
+
+                android:layout_marginTop="30dp"
+                android:background="@drawable/rectangle_6"
+                android:gravity="center"
+                android:text="Apply for job"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
